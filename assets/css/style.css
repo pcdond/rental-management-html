@@ -1,0 +1,1265 @@
+
+*,a.list-group-item:first-child {
+  border-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+li.dropdown {
+    padding: 0px 20px;
+    border-left: 1px solid #157ead;
+    border-right: 1px solid #2d9dd0;
+}
+body {
+  background: #f5f5f5;
+  color: #222;
+  font-family: 'Droid Sans', sans-serif !important;
+  text-rendering: optimizelegibility;
+}
+
+.app-header{
+  position:fixed;
+  width:100%;
+}
+  
+.app-content{
+  padding:10px 16px 0px 16px;
+  min-height: calc(100% - 50px);
+  /* background-color: #E9EBEE; */
+}
+
+.app-view{
+  margin-top:50px;
+  min-height: calc(100vh - 50px);
+
+}
+
+.my-app {
+  width: 100%;
+  height: 100%;
+}
+
+.box-header {
+    position: relative;    
+}
+
+.box-header::after {
+    content: ' ';
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+  
+.box-header h3 {
+    font-size: 16px;
+}
+
+.box-header h2{
+  font-size: 21px;
+  display: inline-block;
+  line-height: 34px !important;
+}
+
+.box-tool {
+    position: absolute;
+    right: 16px;
+    top: 14px;
+}
+
+.box-body {
+    padding: 0px 10px;
+}
+
+a.dropdown-item,a.dropdown-item:focus, a.dropdown-item:hover{
+  color: #000 !important;
+  text-decoration: none !important;  
+}
+
+.input-group .material-icons{
+  font-size: 22px;
+  color:#8FC64B;  
+}
+
+ul.nav.nav-tabs{
+  clear:both;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e2e2;
+}
+.tab-content{
+  border-width: 0px 1px 1px 1px;
+  padding: 25px 0px !important;
+  border-style: solid;
+  border-color: #fff;
+  margin-bottom: 0px!important;
+}
+
+div.checkbox{
+  height:24px;
+}
+
+.form-divider{
+  height: 1px;
+  margin: 5px 0;
+  overflow: hidden;      
+  margin: 20px -8px;
+  width: calc(100% + 16px);
+  border-width: 1px 0px 1px 0px;
+  border-color: #1C90C4;
+  border-style: solid;
+  background-color: transparent;
+}
+
+.form-group label{
+  text-transform: capitalize;
+}
+/*  Notification Badge: */
+.warn{
+  background-color:#F47736 !important;
+}
+
+/*      Custom CSS    */
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+  margin-top: initial !important;
+  margin-bottom: initial !important;
+  font-family: inherit;
+  font-weight: 500;  
+  color: inherit;
+}
+
+.h6, h6{
+  font-size: 16px !important;
+}
+
+.h5, h5 {
+    font-size: 15px !important;
+}
+
+.h4, h4{
+  font-size: 24px !important;
+}
+
+.tab-content{
+  background: #ffffff !important;
+}
+form .form-control{
+  height: 40px;
+  font-size: 13px;
+  border-color: #6666;
+  box-shadow: none;
+  padding: 5px 10px;
+  border-radius: 0px !important;
+}
+
+label{
+  font-weight: 500 !important;
+}
+
+.p-a {
+    padding: 10px !important;
+}
+
+.white {
+    background-color: #fff;
+}
+
+.box-shadow, .box-shadow .box, .box-shadow .box-color {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.03), 0 1px 0 rgba(0, 0, 0, 0.03);
+}
+
+.m-y-sm {
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+}
+/*              Button CSS Start         */
+.btn-success{
+  background-color: #ffffff;
+  border-color: #59ab59;
+  color: #59ab59;
+}
+
+.btn-danger{
+  background-color: #ffffff !important;
+  border-color: #f47736 !important;
+  color:  #f47736 !important;
+}
+
+.btn-danger:hover{
+  background-color: #f47736 !important;
+  border-color: #f47736 !important;
+  color:  #ffffff !important;
+}
+.btn.btn-success, .btn.btn-danger {
+    padding: 13px 20px;
+    min-width: 100px;
+    border-radius: 0px;
+    letter-spacing: 1px;
+    margin-right: 10px;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+/*              Button CSS End         */
+
+/*              Checkbox & Radio CSS Start         */
+.ui-check > i {
+    width: 8px;
+    height: 8px;
+    line-height: 1;
+    box-shadow: 0px 0px 0px 1px #777;
+    margin-top: -4px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+    background-clip: padding-box;
+    position: relative;
+}
+
+.ui-check input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.ui-check input:checked + i:before {
+    left: 2px;
+    top: 2px;
+    width: 4px;
+    height: 4px;
+    background-color: #0cc2aa;
+}
+
+.ui-check > i:before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0px;
+    height: 0px;
+    background-color: transparent;
+
+}
+
+[type=checkbox], [type=radio] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type=date]{
+  text-transform: uppercase;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
+  background-color: white;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+/*              Checkbox & Radio CSS End         */
+
+.dark-white {
+    color: rgba(0, 0, 0, 0.87);
+    background-color: #fff;
+}
+
+.modal > .left, .app-aside > .left {
+    position: fixed;
+    z-index: 1055;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: 0;
+}
+
+.label.up {
+  position: relative;
+  top: -10px;
+  min-width: 4px;
+  min-height: 4px;
+  display: inline-block;
+  font-size: 10px;
+  padding: 2px 5px;
+}
+
+.label-sm {
+    padding: 0.15em 0.35em;
+}
+
+.text-lg {
+    font-size: 24px;
+}
+
+.text-sm {
+    font-size: 12px;
+}
+
+._600 {
+    font-weight: 600;
+}
+
+.r-2x {
+    border-radius: 6px;
+}
+
+.m-r {
+    margin-right: 10px !important;
+}
+
+.m-b {
+    margin-bottom: 10px !important;
+}
+
+.accent {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #a88add;
+}
+
+.b-a {
+    border: 1px solid #777 !important;
+}
+
+ul.list.inset{
+  list-style: none;
+}
+
+.list-item{
+  clear: both;
+  display: block;
+  position: relative;
+  padding: 12px 16px;
+}
+
+.list-left{
+  float: left;
+}
+
+.list-body{
+  margin-left: 56px;
+}
+
+.b-white {
+    border-color: #ffffff;
+}
+
+/*          Common CSS Start           */
+
+.w-32 {
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+    text-align: center;
+}
+
+.w-40 {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.w-48 {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    display: inline-block;
+    text-align: center;
+}
+
+.w-64{
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  display: block;
+  text-align: center;
+  margin:0px auto;
+}
+
+.w-128{
+    width: 128px;
+    height: 128px;
+    line-height: 128px;
+    display: block;
+    text-align: center;
+    margin:0px auto;
+}
+
+.w-100p{
+  width: 100%;
+  height: auto;  
+  display: block;
+  text-align: center;
+  margin:0px auto;
+}
+
+.img{
+  vertical-align: middle;
+}
+
+.avatar img {    
+    width: 100%;
+}
+
+.avatar.w-32 i {
+    margin: 0px;
+}
+
+.avatar i.on {
+    background-color: #6cc788;
+}
+
+.avatar i.bottom {
+    left: auto;
+    top: auto;
+    bottom: 0;
+    right: 0;
+}
+
+.avatar i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100%;
+}
+
+.clear {
+    display: block;
+    overflow: hidden;
+}
+
+.no-shadow {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+/*          Common CSS End           */
+
+/*            Sidebar CSS Start            */
+.app-aside {
+    background-color: #FFF;
+    position: fixed !important;
+    z-index: 1030; 
+    float: left; 
+    height: 100%;
+}
+
+sidebar .list-group{  
+  height:calc(100% - 110px);  /* 50px header height + 60px margin-top */
+  overflow-x: hidden;
+  overflow-y:auto;
+}
+
+sidebar .navside{
+  background-color: rgba(164, 164, 167, 0.1);  
+}
+
+#solso-sidebar {
+  margin-top: 60px;
+  font-family:'Dosis', arial;
+}
+
+#solso-sidebar .input-group-addon {
+  background: none;
+  border: none;
+  color: #0E57A0;
+  /* font-size: 25px; */
+  padding: 0;
+  /* width: 25px; */
+}
+/*
+.list-group-item {
+  border:none !important;
+  background-color: #4e4e4e !important;
+}
+
+.list-group-item:hover {
+  padding-left: 2px;
+  transition-delay: 0s;
+  transition-duration: 0.3s;
+  transition-property: all;
+  transition-timing-function: linear; 
+}*/
+
+.list-group-item.level1 .input-group{
+  margin-left: 32px;
+}
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover{  
+  border-color: transparent !important;
+}
+
+.list-group-item.active,.list-group-item.active .material-icons{    
+  background-color: #F47736 !important;
+  color:#FFF !important;
+}
+
+.list-group-item .list-group-item-heading,
+.list-group-item .list-group-item-text{
+  line-height: 20px;
+  padding-left: 10px;
+}
+
+.list-group-item[data-toggle="collapse"]:after {    
+  content: "keyboard_arrow_right";
+  width: 15px;    
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  line-height: 42px;
+  height: 42px;
+  font-family: 'Material Icons';
+  font-size: 24px;
+}
+.list-group-item[aria-expanded="false"]:after {
+  content: "keyboard_arrow_right";
+}
+
+.list-group-item[aria-expanded="true"]:after {
+  content: "keyboard_arrow_down";
+}
+/*            Sidebar CSS End            */
+
+/*            Header CSS Start            */
+.app-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: inherit;
+    z-index: 1020;
+}
+
+
+.notification-dropdown{
+    box-shadow: 0px 2px 10px #373f48 !important;
+    border: 2px solid rgba(0,0,0,0.2) !important;
+    padding: 5px !important;
+    width:258px;
+}
+
+.email-subject{
+  display:block;
+}
+
+.email-container .email-body{
+    width: 155px !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+}
+
+.email-container{
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.notification-dropdown .w-32{
+  margin:5px;  
+  top:2px !important;
+  width:42px !important;
+  height:42px !important;
+  line-height: 42px !important;
+  vertical-align: middle;
+}
+
+.navbar{
+  background-color: #1c90c4;
+  color: #FFF;
+  padding: 0px;
+  margin-bottom:0px !important;
+  border: initial !important;
+}
+
+.navbar-nav{
+  margin:0px !important;
+}
+
+.navbar .up {
+    margin: 0 -0.6em;
+}
+
+.navbar a{
+  list-style:none;
+  display:list-item;
+}
+
+.navbar-nav .material-icons{
+  color:#FFF;;
+}
+
+a.navbar-item{
+  padding: 0 10px;
+}
+
+.navbar-nav > .nav-link, .navbar-nav > .nav-item > .nav-link, .navbar-item, .navbar-brand {
+    cursor: pointer;
+    line-height: 60px !important;
+    white-space: nowrap;
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar-nav .nav-item+.nav-item {
+    /* margin-left: 10px; */
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent !important;
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+  background-color: transparent !important;
+}
+
+.dropdown-divider {
+    height: 1px;
+    margin: 5px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+.dropdown-item:hover, .dropdown-item:focus {
+    color: inherit;
+    background-color: rgba(0, 0, 0, 0.065);
+}
+
+/*            Header CSS End            */
+
+/*            View CSS Start            */
+.nav-tab-container{
+  margin:30px 0px;
+}
+
+.nav-tabs li a{
+  padding: 10px 15px;
+  border: 1px solid #ffffff !important;
+  /* background-color: transparent !important; */
+  /* border-left: 1px solid #ccc !important; */
+  /* border-top: 1px solid #ccc !important; */
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+  color: #fff;
+  border: none;
+  background-color: #1c90c4 !important;
+  /* box-shadow: 0px 0px 20px #09445f; */
+}
+
+.nav-tabs>li.active>a:after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    margin: 0px auto;
+    width: 0;
+    height: 0;
+    border-top: 10px solid #1c90c4;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+ul.nav{
+  overflow: visible;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+ul.nav-tabs>li{
+  margin-bottom: 0;
+}
+
+ul.nav-tabs>li>a{
+  margin-right: 0;
+  color: #797979;
+  background: #f1f1f1;
+  border: 0;
+  border-radius: 0px;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.panel-heading{
+  background-color: #1c90c4 !important;
+  color: #FFFFFF !important;  
+}
+
+.panel-heading a{
+  text-decoration: none !important;
+}
+
+.panel-heading a[data-toggle="collapse"]:after,
+.panel-heading a[aria-expanded="true"]:after{    
+  content: "keyboard_arrow_right";    
+  font-family: 'Material Icons';
+  font-size: 24px;    
+  float: right;
+}
+
+.panel-heading a[aria-expanded="false"]:after{
+  content: "keyboard_arrow_down";    
+
+}
+
+.panel-group .panel+.panel {
+    margin-top: 0 !important;
+}
+
+.add-item{
+  font-size: 24px !important;
+  right: 15px;
+  position: absolute;
+  cursor: hand;
+}
+
+/* .file-upload{
+  position: absolute;
+  right: 15px;
+  top: 15px;
+} */
+
+button.btn{
+  border-radius: 4px;
+}
+
+.file-upload{
+  margin: auto;
+  display: table;
+  top: 32px;
+  position: relative;
+  width: 100%;
+}
+
+.file-upload__label {
+  display: block;
+  color: #fff;
+  left: calc((100% - 158px)/2);
+  position: absolute;
+  background: #222;
+  border-radius: .4em;
+  transition: background .3s;
+  width: 158px;
+  height: 200px;
+  text-align: center;
+  cursor: hand;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.file-upload__input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 1;
+  width: 0;
+  height: 100%;
+  opacity: 0;
+}
+
+label.file-upload__label::after {
+  display: block;
+  content: 'browse';  
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0px;
+  text-align: center;
+  width: 158px;
+  cursor: pointer;  
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+input.country-code{
+  width:25%;
+  display:inline-block;
+  padding:6px 6px;
+}
+/*            View CSS End            */
+
+/*            Employee Form Start           */
+.employee-details .box{
+  padding: 15px;
+}
+
+.employee-container{  
+  background-color: #FFF;
+  border-radius: 5px !important;
+  box-shadow: 0px 0px 2px #1c90c4;
+  position: relative;
+}
+
+.employee-container .employee-name{
+  font-size: 24px;  
+  padding: 5px 15px;
+  position: relative;
+  width: 100%;
+  height: 38px;
+  margin-top: -38px;
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.employee-description{
+  padding: 10px;
+  cursor: pointer;
+  /* text-align: center; */
+}
+
+.employee-detail{
+  line-height: 28px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.employee-detail span{
+  font-weight: 600;
+}
+
+#personal_details .employee-detail{
+  margin-bottom: 0px;
+}
+
+.search-box{
+  float: right;
+  height: 34px;
+  padding: 0px 10px;
+  margin: 0px 15px;
+  width: 50%;
+}
+
+.view-employee .title{
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.user-image{
+  height: 120px;
+  width: 110px;
+  background-color: blueviolet;  
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.action-buttons .btn{
+  background-color: #1c90c4;
+  color: #FFF;
+  width: calc(50% - 1px);  
+  height: 36px;
+}
+
+.action-buttons .btn-edit {
+  border-radius: 0px 0px 0px 5px !important;
+  text-transform: uppercase;
+}
+
+.action-buttons .btn-delete{
+  margin-left: -2px;
+  border-radius: 0px 0px 5px 0px !important;
+  text-transform: uppercase;
+}
+
+button.btn-delete:hover, button.btn-delete:focus, button.btn-delete:active {  
+  color: #FFF;
+  background-color: #fd523d !important;
+}
+
+button.btn-edit:hover, button.btn-edit:focus, button.btn-edit:active {  
+  color: #FFF;
+  background-color: #46c867 !important;
+}
+
+
+/*            Employee Form End         */
+
+
+/*            Contact Form Start         */
+.DocumentList
+{
+    overflow-x:auto;
+    overflow-y:hidden;    
+    width:100%;
+    padding: 0 15px;
+}
+
+.DocumentItem
+{
+    border:1px solid #C1C1C1;
+    padding:0;
+    height:20px;
+}
+
+.DocumentItem input,
+.DocumentItem span{
+    margin: 5px;
+    display: block;
+}
+
+.list-inline {
+  white-space:nowrap;
+}
+
+.contact-container,
+.client-container{  
+  margin: 10px 0px;
+  background-color: #FFF;  
+  border: 1px solid #1c90c4;
+  border-radius: 0px 0px 5px 5px !important;
+}
+
+.contact-container .contact-detail,
+.client-container .client-detail{
+  margin:8px;
+  text-align: center;
+}
+
+.contact-details,
+.client-details{
+  display: inline;
+}
+
+.client-details .email-id{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+div.search-result{
+  position: absolute;
+  background-color: #FFF;
+  z-index: 10;
+  margin-left: -15px;
+}
+
+.search-result ul{
+  padding-left: 0;
+  border: 1px solid #0E57A0;
+}
+
+.search-result li{
+  display: block;
+  height: 28px;
+  line-height: 28px;
+  padding: 0px 10px;
+}
+.search-result li:hover{
+  background-color: #0E57A0;
+  color: #FFF;
+}
+/*            Contact Form End         */
+
+/*            Enquiry Form Start       */
+
+.enquiry-form .enquiry-items label,
+.quote-form .quote-items label{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.enquiry-form .enquiry-items input,
+.quote-form .quote-items input{
+  max-width: 99%;
+}
+
+.enquiry-items .row label,
+.quote-items .row label{
+ margin-bottom: 10px;
+    display: block;
+    clear: both;
+}
+
+.enquiry-items .row,
+.quote-items .row{
+  margin-bottom: 10px;
+}
+
+/*            Enquiry Form End         */
+
+
+input.ng-touched.ng-invalid{
+  border-color: #fd523d !important;
+  background: url('../images/error.png') no-repeat #FFF;
+}
+/*            Helper CSS            */
+
+.padding25{
+  padding: 25px;
+}
+
+.clearFloat:after{
+  content:'';
+  clear: both;
+  display: table;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+.noPadding {
+  padding: 0px !important;
+}
+
+.padding{
+  padding: 10px;
+}
+
+.noTop {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.marginTop10{
+  margin-top: 10px;
+}
+
+.autowidth{
+  width:auto !important;
+}
+
+.noBottom {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.seperator{
+  margin: 20px 0px;
+  border-bottom: 1px solid black;  
+}
+/*          Helper CSS End          */
+
+/*          SnackBar Css Start      */
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 99999;
+  left: 50%;
+  bottom: 30px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+/*          SnackBar Css End      */
+
+/*          Freeze App Css Start      */
+
+.freeze-app{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width:100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  z-index: 9999;
+}
+
+.freeze-content{
+  display: table-cell;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.freeze-button{
+  color:#000;
+  width: 200px;
+  height: 40px;  
+  border: none;
+  margin: 50px 0px;  
+  background-color: #FFF;
+}
+
+.freeze-text{
+  display: block;
+  font-size: 48px;
+  color: #FFF;  
+  text-align: center;
+  width: 100%;
+}
+
+fieldset legend{
+  margin:0 10px 5px 0px;
+  margin-bottom: 5px;
+}
+/*          Freeze App Css End      */
+
+.refresh-employee-list,
+.add-employee-relation,
+.remove-employee-relation,
+.add-bank-detail,
+.remove-bank-detail,
+.add-enquiry,
+.remove-enquiry,
+.add-quote,
+.remove-quote{
+  float:  right;
+  top:5px;
+  background: none;
+  border: none;  
+}
+.refresh-employee-list .material-icons,
+.add-employee-relation .material-icons,
+.remove-employee-relation .material-icons,
+.add-bank-detail .material-icons,
+.remove-bank-detail .material-icons,
+.add-enquiry .material-icons,
+.remove-enquiry .material-icons,
+.add-quote .material-icons,
+.remove-quote .material-icons{
+  font-size: 28px;
+}
+
+@media (max-width: 768px){
+  .nav>li{
+    float:left;
+  }
+  .app-aside.nav-dropdown{
+    width: 186px;   
+  }
+  .app-aside .navside{
+    position:absolute;
+    background-color:#f6f6f6;
+  }
+  .modal-backdrop.fade.in{
+    display:none;
+  }
+
+}
+
+
+
+
+@media (min-width: 768px){
+  .hidden-md-up {
+      display: none!important;
+  }
+    .modal-dialog{
+      width:80% !important;
+      max-width: 1200px;
+    }
+}
+
+@media (min-width: 992px){
+  .hidden-lg-up {
+      display: none!important;
+  }
+  .app-aside, .app-aside .scroll {
+    width: 235px;
+  }
+  .app-aside:not(.hide) ~ .app-content {
+    margin-left: 235px;
+  }
+  .app-aside .left {
+    position: absolute;
+    right: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .app-aside {
+    opacity: 1 !important;
+    display: block !important;
+  }
+}
+
+
+
+
+
+/************************/
+/*      12-12-2017      */
+/************************/
+div#pageTitle {
+    padding: 0px 20px;
+}
+button#sidebarCollapse {
+    border-radius: 0px;
+    width: 60px;
+    height: 60px;
+    margin: 0px;
+    font-size: 32px;
+    font-weight: 100;
+    background: #0a648c;
+    padding-top: 11px;
+    border-right: 1px solid #01577d;
+}
+#sidebar ul li .Submenu a {
+    padding: 15px 10px !important;
+    margin: 0px !important;
+    background: #ff8100;
+    border-top: 1px solid #e0770c;
+    border-bottom: 1px solid #ffa243;
+    border-left: 4px solid #ffffff00;
+    color: #fff;
+}
+
+#sidebar ul li .Submenu .input-group{ margin-left: 0px !important}
+
+#sidebar ul li .Submenu h5.list-group-item-heading { color: #fff; }
+
+
+
+
+
+#sidebar ul li.active .input-group .material-icons{
+  font-size: 22px;
+  color: #ff8100;
+}

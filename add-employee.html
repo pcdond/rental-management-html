@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Thakrar infotrends</title>
+<!-- Bootstrap CSS CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Our Custom CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/material-design-icons/material-design-icons.css">
+<link rel="stylesheet" href="assets/css/custom.css"> </head>
+
+<body>
+<header>
+<div class="navbar">
+
+<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn pull-left"> <i class="glyphicon glyphicon-menu-hamburger "></i> </button>
+<div class="navbar-item pull-left h5" id="pageTitle">Company Name</div>
+<!-- navbar right -->
+<ul class="nav navbar-nav pull-right">
+<!-- Email Drop down -->
+<li class="nav-item dropdown pos-stc-xs">
+<!-- Label -->
+<a class="nav-link" href="" data-toggle="dropdown"> <i class="material-icons">email</i> <span class="label label-sm up warn">3</span> </a>
+<!-- dropdown -->
+<div class="notification-dropdown dropdown-menu pull-right dropdown-menu-scale"> You have 4 new Email
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span class="avatar w-32">
+<img src="../assets/images/a0.jpg" alt="...">
+<i class="on b-white bottom"></i>
+</span> <span class="email-container">
+<span class="email-subject">Subject title</span> <span class="email-body">Body description..abc xyz jkl</span> </span>
+</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span class="avatar w-32">
+<img src="../assets/images/a0.jpg" alt="...">
+<i class="on b-white bottom"></i>
+</span> <span class="email-container">
+<span class="email-subject">Subject title</span> <span class="email-body">Body description..abc xyz jkl</span> </span>
+</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span class="avatar w-32">
+<img src="../assets/images/a0.jpg" alt="...">
+<i class="on b-white bottom"></i>
+</span> <span class="email-container">
+<span class="email-subject">Subject title</span> <span class="email-body">Body description..abc xyz jkl</span> </span>
+</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span class="avatar w-32">
+<img src="../assets/images/a0.jpg" alt="...">
+<i class="on b-white bottom"></i>
+</span> <span class="email-container">
+<span class="email-subject">Subject title</span> <span class="email-body">Body description..abc xyz jkl</span> </span>
+</a>
+</div>
+<!-- / dropdown -->
+</li>
+<!-- Notification Drop down -->
+<li class="nav-item dropdown pos-stc-xs">
+<!-- Label -->
+<a class="nav-link" href="" data-toggle="dropdown"> <i class="material-icons"></i> <span class="label label-sm up warn">3</span> </a>
+<!-- dropdown -->
+<div class="notification-dropdown dropdown-menu pull-right dropdown-menu-scale"> You have 4 notification.
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span calss="notification-item">Your notification 1</span> </a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span calss="notification-item">Your notification 2</span> </a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span calss="notification-item">Your notification 3</span> </a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span calss="notification-item">Your notification 4</span> </a>
+</div>
+<!--/ dropdown -->
+</li>
+<!-- User profile Drop down -->
+<li class="nav-item dropdown">
+<a class="nav-link clear" href="" data-toggle="dropdown"> <span class="avatar w-32">
+<img src="assets/images/a0.jpg" alt="...">
+<i class="on b-white bottom"></i>
+</span> </a>
+<div class="dropdown-menu pull-right dropdown-menu-scale">
+<a class="dropdown-item"> <span>Inbox</span> <span class="label warn m-l-xs">3</span> </a>
+<a class="dropdown-item"> <span>Profile</span> </a>
+<a class="dropdown-item"> <span>Settings</span> <span class="label primary m-l-xs">3/9</span> </a>
+<div class="dropdown-divider"></div> <a class="dropdown-item">
+Sign out
+</a> </div>
+</li>
+<li class="nav-item hidden-md-up">
+<a class="nav-link" data-toggle="collapse" data-target="#collapse"> <i class="material-icons"></i> </a>
+</li>
+</ul>
+</div>
+</header>
+<div class="wrapper">
+<!---sidebar starts-->
+<nav id="sidebar">
+
+<div id="solso-sidebar" class="list-group">
+<ul class="list-unstyled components">
+<li class="active">
+<a href="#dashboard" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar" routerLink="dashboard"> <span class="MenuIcon"><i class="fa material-icons">home</i></span> <span class="MenuTxtWord">Dashboard</span> </a>
+</li>
+<!--home-->
+<li>
+<a href="#enquiry-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">local_phone</i></span> <span class="MenuTxtWord">Enquiry</span> </a>
+<ul class="Submenu collapse list-unstyled" id="enquiry-list">
+<li><a href="#" class="list-group-item level1" routerLink="enquiry"><span class="MenuIcon"><i class="fa material-icons">group</i></span> <span class="MenuTxt">Enquiry</span></a> </li>
+<li><a href="#" class="list-group-item level1" routerLink="quote"><span class="MenuIcon"><i class="fa material-icons">receipt</i></span> <span class="MenuTxt">Quote</span></a> </li>
+</ul>
+</li>
+<!--Enquiry-->
+<li>
+<a href="#inventory" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxtWord">Inventory</span> </a>
+<ul class="Submenu collapse list-unstyled" id="inventory">
+<li><a href="#" class="list-group-item level1" routerLink="addinventory"><span class="MenuIcon"><i class="fa material-icons">group</i></span> <span class="MenuTxt">Add Inventory</span></a> </li>
+<li><a href="#" class="list-group-item level1" routerLink="viewinventory"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Inventory</span></a> </li>
+</ul>
+</li>
+<!--Inventory-->
+<li>
+<a href="#autorenew" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">autorenew</i></span> <span class="MenuTxtWord">Renewals</span> </a>
+</li>
+<!--Renewals-->
+<li>
+<a href="#employe-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">face</i></span> <span class="MenuTxtWord">Employees</span> </a>
+<ul class="Submenu collapse list-unstyled" id="employe-list">
+<li><a href="#" class="list-group-item level1" routerLink="addemployee"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Employees</span></a> </li>
+<li><a href="#" class="list-group-item level1" routerLink="viewemployee"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Employees</span></a> </li>
+</ul>
+</li>
+<!--Employees-->
+<li>
+<a href="#client-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">account_box</i></span> <span class="MenuTxtWord">Clients / Suppliers</span> </a>
+<ul class="Submenu collapse list-unstyled" id="client-list">
+<li><a href="#" class="list-group-item level1" routerLink="addclient"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Client</span></a> </li>
+<li><a href="#" class="list-group-item level1" routerLink="viewclient"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Client</span></a> </li>
+</ul>
+</li>
+<!--Clients / Suppliers-->
+<li>
+<a href="#contact-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">contact_phone</i></span> <span class="MenuTxtWord">Contacts</span> </a>
+<ul class="Submenu collapse list-unstyled" id="contact-list">
+<li><a href="#" class="list-group-item level1" routerLink="addcontact"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Contact</span></a> </li>
+<li><a href="#" class="list-group-item level1" routerLink="viewcontact"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Contact</span></a> </li>
+</ul>
+</li>
+<!--Clients / Suppliers-->
+<li>
+<a href="#admin" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">face</i></span> <span class="MenuTxtWord">Admin</span> </a>
+<ul class="Submenu collapse list-unstyled" id="admin">
+<li><a href="#" class="list-group-item level1" routerLink="addmodel"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Model</span></a> </li>
+<li><a href="#" class="list-group-item level1" routerLink="addpartnumber"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">Add Part Number</span></a> </li>
+<li><a href="#" class="list-group-item level1" routerLink="addprice"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">Add Price</span></a> </li>
+</ul>
+</li>
+<!--Clients / Suppliers-->
+</ul>
+</div>
+</nav><!---sidebar ends-->
+
+<div id="content" style="width: 100%">
+<div class="container-fluid">
+<div class="col-md-12" style="background:#fff">
+<div style="background: #fff; padding:15px;">
+<div class="">
+<div class="row">
+<div class="col-md-12">
+<div class="box">
+<div class="box-header">
+<h2>Employee Detail Form</h2> </div>
+<div class="box-body">
+<form >
+<div class="nav-tab-container marginTop10">
+<ul class="nav nav-tabs" name="item-selector-tabs">
+<li class="active"> <a data-toggle="tab" href="#personal_details">Personal Details</a> </li>
+<li> <a data-toggle="tab" href="#address_details">Contact Details</a> </li>
+<li> <a data-toggle="tab" href="#emrgncy_cntct_details">Family Details</a> </li>
+<li> <a data-toggle="tab" href="#documet_details">Document Details</a> </li>
+</ul>
+
+<!--tabcontent starts-->
+<!--tabcontent starts-->
+<div class="tab-content">
+
+<!--personal_details starts-->	
+<div id="personal_details" class="tab-pane fade in active">
+
+<div class="form-group row employee-detail">
+<div class="col-sm-9 col-xs-12">
+<div class="form-group row">
+<div class="col-sm-4">
+<label>Name</label>
+<select class="form-control c-select person-title" formcontrolname="empTitle">
+<option></option>
+</select>
+<input type="text" class="form-control name-with-title " formcontrolname="empName" placeholder="Name"> </div>
+<div class="col-sm-4">
+<label>Middle Name</label>
+<input type="text" class="form-control" formcontrolname="empMName" placeholder="Middle Name"> </div>
+<div class="col-sm-4">
+<label>Surname</label>
+<input type="text" class="form-control" formcontrolname="empSurname" placeholder="Surname"> </div>
+</div>
+<div class="form-group row">
+<div class="col-sm-3 col-xs-12">
+<label>Date of birth</label>
+<input type="date" class="form-control" formcontrolname="empDOB" placeholder=""> </div>
+<div class="col-sm-3 col-xs-6">
+<label>Gender</label>
+<select class="form-control c-select" formcontrolname="empGender">
+<option  ></option>
+</select>
+</div>
+<div class="col-sm-3 col-xs-6">
+<label>Blood Group</label>
+<select class="form-control c-select" formcontrolname="empBloodG">
+<option></option>
+</select>
+</div>
+</div>
+<div class="form-group row">
+<div class="col-sm-3">
+<label>Marital Status</label>
+<select class="form-control c-select">
+<option ></option>
+</select>
+</div>
+<div class="col-sm-3">
+<label style="display:block;">Phone number</label>
+<input type="number" class="form-control country-code" placeholder="Code" formcontrolname="empCCode">
+<input type="number" class="form-control" style="width:calc(75% - 4px);display:inline-block;" placeholder="Phone Number" formcontrolname="empPhone"> </div>
+<div class="col-sm-3">
+<label>Email Address</label>
+<input type="email"  class="form-control" placeholder="Email Address" formcontrolname="empEmail1"> </div>
+<div class="col-sm-3">
+<label>Alternate Email Address</label>
+<input type="email" class="form-control" placeholder="Email Address" formcontrolname="empEmail2"> </div>
+</div>
+<div class="form-group row">
+<div class="col-sm-3">
+<label>Facebook Link</label>
+<input type="text" class="form-control" placeholder="Facebook Link" formcontrolname="empFB"> </div>
+<div class="col-sm-3">
+<label>LinkedIn Link</label>
+<input type="text" class="form-control" placeholder="LinkedIn Link" formcontrolname="empLinkedin"> </div>
+<div class="col-sm-3">
+<label>Twitter Link</label>
+<input type="text" class="form-control" placeholder="Twitter Link" formcontrolname="empTwitter"> </div>
+</div>
+</div>
+<div class="col-sm-3 col-xs-12" style="min-height:250px;">
+<div class="file-upload">
+<label for="upload" id="uploaded-image" class="file-upload__label"></label>
+<input id="upload" class="file-upload__input" accept="image/*" type="file"  name="file-upload" formcontrolname="empPicUpload"> </div>
+</div>
+</div>
+</div>
+
+<!--personal_details ends-->	
+<!--address_details starts-->
+<div id="address_details" class="tab-pane fade in">
+
+<div class="form-group row">
+<div class="col-sm-3">
+<label>Country</label>
+<select class="form-control c-select">
+<option></option>
+</select>
+</div>
+<div class="col-sm-3">
+<label style="display:block;">Mobile number</label>
+<input type="number" class="form-control country-code" placeholder="Code" readonly="" formcontrolname="empMCode">
+<input type="number" class="form-control" style="width:calc(75% - 4px);display:inline-block;" placeholder="Mobile Number" formcontrolname="empMobile"> </div>
+<div class="col-sm-3">
+<label style="display:block;">Alternate Mobile number</label>
+<input type="number" class="form-control country-code" placeholder="Code" readonly="" formcontrolname="empAMCode">
+
+<input type="number" class="form-control" style="width:calc(75% - 4px);display:inline-block;" placeholder="Mobile Number" formcontrolname="empAMobile"> </div>
+</div>
+<fieldset>
+
+<div class="form-group row">
+<div class="col-md-9 no-padding-lr">
+<div class="col-sm-6">
+<label>Current Address :</label>
+<textarea class="form-control text-area" placeholder="Address" formcontrolname="empAdd1" row="5"></textarea>
+</div>
+<div class="col-sm-6">
+<div class="form-group row">
+<label>State</label>
+<select class="form-control c-select" >
+<option></option>
+</select>
+</div>
+<div class="form-group row">
+<label>City</label>
+<select class="form-control c-select" formcontrolname="empCity">
+<option ></option>
+</select>
+</div>
+<div class="form-group row">
+<label>Pincode</label>
+<input type="text" class="form-control" placeholder="Pincode" formcontrolname="empPincode"> </div>
+</div>
+</div>
+</div>
+</fieldset>
+<fieldset>
+
+<div class="form-group row">
+<div class="col-sm-12">
+<input type="checkbox" style="vertical-align:top;"  value=""> Same As Above </div>
+</div>
+<div class="form-group row">
+<div class="col-md-9 no-padding-lr">
+<div class="col-sm-6">
+<label>Permenant Address</label>
+<textarea class="form-control text-area text-area2" placeholder="Address" formcontrolname="empAdd2"></textarea>
+</div>
+<div class="col-sm-6">
+<div class="form-group row">
+<label>Country</label>
+<select class="form-control c-select" formcontrolname="empCountry2">
+<option></option>
+</select>
+</div>
+<div class="form-group row">
+<label>State</label>
+<select class="form-control c-select"  formcontrolname="empState2" >
+<option ></option>
+</select>
+</div>
+<div class="form-group row">
+<label>City</label>
+<select class="form-control c-select" formcontrolname="empCity2">
+<option></option>
+</select>
+</div>
+<div class="form-group row">
+<label>Pincode</label>
+<input type="text" class="form-control" placeholder="Pincode" formcontrolname="empPincode2"> </div>
+</div>
+</div>
+</div>
+</fieldset>
+</div>
+<!--address_details endss-->
+<!--emrgncy_cntct_details starts-->
+<div id="emrgncy_cntct_details" class="tab-pane fade in ">
+
+<div class="form-group row">
+<div class="col-sm-3">
+<label>Date Of Anniversary</label>
+<input type="date" class="form-control" placeholder="" formcontrolname="empDOAnni">
+</div>
+
+<div class="col-sm-offset-6 col-sm-3">
+<button class="add-employee-relation" >
+<i class="material-icons">add</i>
+</button>
+<button class="remove-employee-relation" >
+<i class="material-icons">remove</i>
+</button>
+</div>
+</div>
+<div class="family-details-group">
+<div class="family-details-header">
+<div class="form-group row">
+<div class="col-sm-3">
+<label>Name</label>
+</div>
+<div class="col-sm-3">
+<label>Relation</label>
+</div>
+<div class="col-sm-3">
+<label>Mobile number</label>
+</div>
+<div class="col-sm-3">
+<label>Email Address</label>
+</div>
+</div>
+</div>
+<div id="family-details-body" class="family-details-body">
+<div class="form-group row">
+<div class="col-sm-3">
+<input type="text" class="form-control" placeholder="Contact Person Name">
+</div>
+<div class="col-sm-3">
+<select class="form-control c-select" >
+<option ></option>
+</select>
+</div>
+<div class="col-sm-3">
+<input type="number" class="form-control country-code" style="width:25%;display:inline-block;" placeholder="Code">
+<input type="number" class="form-control" style="width:calc(75% - 4px);display:inline-block;"  placeholder="Mobile Number">
+</div>
+<div class="col-sm-3">
+<input type="text" class="form-control"  placeholder="Email Address">
+</div>
+</div>
+<div class="form-group row">
+<div class="col-sm-12">
+<fieldset>
+<legend>
+References
+</legend>
+<div class="form-group row">
+<div class="col-sm-3">
+<label>Name</label>
+<input type="text" class="form-control" placeholder="Reference Name" formcontrolname="empRef1Name">
+</div>
+<div class="col-sm-3">
+<label>Company</label>
+<input type="text" class="form-control" placeholder="Reference Company" formcontrolname="empRef1Company">
+</div>
+<div class="col-sm-3">
+<label>Phone</label>
+<input type="text" class="form-control" placeholder="Reference Phone" formcontrolname="empRef1Phone">
+</div>
+</div>
+<div class="form-group row">
+<div class="col-sm-3">
+<label>Name</label>
+<input type="text" class="form-control" placeholder="Reference Name" formcontrolname="empRef2Name">
+</div>
+<div class="col-sm-3">
+<label>Company</label>
+<input type="text" class="form-control" placeholder="Reference Company" formcontrolname="empRef2Company">
+</div>
+<div class="col-sm-3">
+<label>Phone</label>
+<input type="text" class="form-control" placeholder="Reference Phone" formcontrolname="empRef2Phone">
+</div>
+</div>
+</fieldset>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<!--emrgncy_cntct_details ends-->
+<!--documet_details starts-->
+<div id="documet_details" class="tab-pane fade in ">
+<div class="form-group row">
+<div class="col-sm-3">
+<label>Date of Joining</label>
+<input type="date" class="form-control" placeholder="Date of Joining" formcontrolname="empDOJ">
+</div>
+<div class="col-sm-3">
+<label>Date of relieveing</label>
+<input type="date" class="form-control" placeholder="Date of Relieveing" formcontrolname="empDOR">
+</div>
+</div>
+<div class="form-group row">
+<div class="col-sm-3">
+<label>Pan card number</label>
+<input type="text" class="form-control" placeholder="Pan Card Number" formcontrolname="empPAN">
+</div>
+<div class="col-sm-3">
+<label>Aadhar card number</label>
+<input type="text" class="form-control" placeholder="Aadhar Card Number" formcontrolname="empAdhar">
+</div>
+</div>
+
+<div class="form-group row">
+<div class="col-sm-3">
+<label>Passport number</label>
+<input type="text" class="form-control" placeholder="Passport Number" formcontrolname="empPassNo">
+</div>
+<div class="col-sm-3">
+<label>Expiry Date</label>
+<input type="date" class="form-control" placeholder="Expiry Date" formcontrolname="empPassExpiry">
+</div>
+</div>
+
+<div class="form-group row">
+<div class="col-sm-3">
+<label>Bank Name</label>
+<input type="text" class="form-control" placeholder="Bank Name" formcontrolname="empBankName">
+</div>
+<div class="col-sm-3">
+<label>Bank A/C number</label>
+<input type="number" class="form-control" placeholder="Bank A/C Number" formcontrolname="empBankAcc">
+</div>
+<div class="col-sm-3">
+<label>Bank IFSC code</label>
+<input type="text" class="form-control" placeholder="Bank IFSC Code" formcontrolname="empIFSCCode">
+</div>
+</div>
+</div>
+<!--documet_details starts-->
+
+</div>
+<!--tabcontent ends-->
+</form>
+<button type="submit" id="next-save-button" class="btn btn-success">Next</button>
+<input type="button" value="Clear" class="btn btn-danger"/> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap Js CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#sidebarCollapse').on('click', function() {
+$('#sidebar').toggleClass('active');
+});
+});
+$('.list-group a.list-group-item').on('click', function(e) {
+$('.list-group a.list-group-item').removeClass('active');
+$(this).addClass('active');
+});
+</script>
+</body>
+
+</html>

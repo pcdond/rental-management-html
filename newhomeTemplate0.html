@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Thakrar infotrends</title>
+
+<!-- Bootstrap CSS CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Our Custom CSS -->
+
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/material-design-icons/material-design-icons.css">
+<link rel="stylesheet" href="assets/css/custom.css">
+
+ 
+</head>
+<body>
+ 
+
+
+
+<header> 
+    <div class="navbar">
+    <!-- Open side - Naviation on mobile -->
+    <!--<a data-toggle="modal" data-target="#aside" class="navbar-item pull-left hidden-lg-up">
+		<i class="material-icons"></i>
+	</a>-->
+    <!-- / -->
+    <!-- Page title - Bind to $state's title --> 
+	<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn pull-left"> <i class="glyphicon glyphicon-menu-hamburger "></i> </button>
+	<div class="navbar-item pull-left h5" id="pageTitle">Company Name</div> 
+    <!-- navbar right -->
+    <ul class="nav navbar-nav pull-right">
+        <!-- Email Drop down -->
+        <li class="nav-item dropdown pos-stc-xs">
+            <!-- Label -->
+            <a class="nav-link" href="" data-toggle="dropdown">
+				<i class="material-icons">email</i>
+				<span class="label label-sm up warn">3</span>
+			</a>
+            <!-- dropdown -->
+            <div class="notification-dropdown dropdown-menu pull-right dropdown-menu-scale">
+                You have 4 new Email
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">
+                    <span class="avatar w-32">
+                        <img src="../assets/images/a0.jpg" alt="...">
+                        <i class="on b-white bottom"></i>
+                    </span>
+                    <span class="email-container">
+                        <span class="email-subject">Subject title</span>
+                        <span class="email-body">Body description..abc xyz jkl</span>
+                    </span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">
+                    <span class="avatar w-32">
+                        <img src="../assets/images/a0.jpg" alt="...">
+                        <i class="on b-white bottom"></i>
+                    </span>
+                    <span class="email-container">
+                        <span class="email-subject">Subject title</span>
+                        <span class="email-body">Body description..abc xyz jkl</span>
+                    </span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">
+                    <span class="avatar w-32">
+                        <img src="../assets/images/a0.jpg" alt="...">
+                        <i class="on b-white bottom"></i>
+                    </span>
+                    <span class="email-container">
+                        <span class="email-subject">Subject title</span>
+                        <span class="email-body">Body description..abc xyz jkl</span>
+                    </span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">
+                    <span class="avatar w-32">
+                        <img src="../assets/images/a0.jpg" alt="...">
+                        <i class="on b-white bottom"></i>
+                    </span>
+                    <span class="email-container">
+                        <span class="email-subject">Subject title</span>
+                        <span class="email-body">Body description..abc xyz jkl</span>
+                    </span>
+                </a>
+            </div>
+            <!-- / dropdown -->
+        </li>
+
+
+        <!-- Notification Drop down -->
+        <li class="nav-item dropdown pos-stc-xs">
+            <!-- Label -->
+            <a class="nav-link" href="" data-toggle="dropdown">
+				<i class="material-icons"></i>
+				<span class="label label-sm up warn">3</span>
+            </a>
+            <!-- dropdown -->
+            <div class="notification-dropdown dropdown-menu pull-right dropdown-menu-scale">
+                You have 4 notification.
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">                    
+                    <span calss="notification-item">Your notification 1</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">                    
+                    <span calss="notification-item">Your notification 2</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">                    
+                    <span calss="notification-item">Your notification 3</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">                    
+                    <span calss="notification-item">Your notification 4</span>
+                </a>
+            </div>
+            <!--/ dropdown -->
+        </li>
+
+        <!-- User profile Drop down -->
+        <li class="nav-item dropdown">
+            <a class="nav-link clear" href="" data-toggle="dropdown">
+				<span class="avatar w-32">
+					<img src="assets/images/a0.jpg" alt="...">
+						<i class="on b-white bottom"></i>
+                </span>
+            </a>
+            <div class="dropdown-menu pull-right dropdown-menu-scale">
+                <a class="dropdown-item">
+                    <span>Inbox</span>
+                    <span class="label warn m-l-xs">3</span>
+                </a>
+                <a class="dropdown-item">
+                    <span>Profile</span>
+                </a>
+                <a class="dropdown-item">
+                    <span>Settings</span>
+                    <span class="label primary m-l-xs">3/9</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item">
+                    Sign out
+                </a>
+            </div>
+        </li>
+        <li class="nav-item hidden-md-up">
+            <a class="nav-link" data-toggle="collapse" data-target="#collapse">
+                <i class="material-icons"></i>
+            </a>
+        </li>
+    </ul>
+</div> 
+</header>
+<div class="wrapper"> 
+
+  <!-- Sidebar Holder -->
+  <nav id="sidebar">
+   <!-- <div class="sidebar-header"> <h3>Bootstrap Sidebar</h3> <strong>BS</strong> </div>-->
+    <div id="solso-sidebar" class="list-group"> 
+		<ul class="list-unstyled components">
+	  		<li class="active">
+		  		<a href="#dashboard" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar" routerLink="dashboard">
+					<span class="MenuIcon"><i class="fa material-icons">home</i></span>
+					<span class="MenuTxtWord">Dashboard</span>
+				</a>
+	  		</li>
+			<!--home-->
+	  		<li>
+				<a href="#enquiry-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">local_phone</i></span> <span class="MenuTxtWord">Enquiry</span> </a>
+				<ul class="Submenu collapse list-unstyled" id="enquiry-list">
+				  <li><a href="#" class="list-group-item level1" routerLink="enquiry"><span class="MenuIcon"><i class="fa material-icons">group</i></span> <span class="MenuTxt">Enquiry</span></a></li>
+				  <li><a href="#" class="list-group-item level1" routerLink="quote"><span class="MenuIcon"><i class="fa material-icons">receipt</i></span> <span class="MenuTxt">Quote</span></a></li>
+				</ul>
+	  		</li>
+			<!--Enquiry-->
+	  		<li>
+				<a href="#inventory" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxtWord">Inventory</span> </a>
+				<ul class="Submenu collapse list-unstyled" id="inventory">
+				  <li><a href="#" class="list-group-item level1" routerLink="addinventory"><span class="MenuIcon"><i class="fa material-icons">group</i></span> <span class="MenuTxt">Add Inventory</span></a></li>
+				  <li><a href="#" class="list-group-item level1" routerLink="viewinventory"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Inventory</span></a></li>
+				</ul>
+	  		</li>
+			<!--Inventory-->
+	  		<li>
+				<a href="#autorenew" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">autorenew</i></span> <span class="MenuTxtWord">Renewals</span> </a>
+	  		</li>
+			<!--Renewals-->
+	  		<li>
+				<a href="#employe-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">face</i></span> <span class="MenuTxtWord">Employees</span> </a>
+				<ul class="Submenu collapse list-unstyled" id="employe-list">
+				  <li><a href="#" class="list-group-item level1" routerLink="addemployee"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Employees</span></a></li>
+				  <li><a href="#" class="list-group-item level1" routerLink="viewemployee"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Employees</span></a></li>
+				</ul>
+	  		</li>
+			<!--Employees-->
+	  		<li>
+				<a href="#client-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">account_box</i></span> <span class="MenuTxtWord">Clients / Suppliers</span> </a>
+				<ul class="Submenu collapse list-unstyled" id="client-list">
+				  <li><a href="#" class="list-group-item level1" routerLink="addclient"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Client</span></a></li>
+				  <li><a href="#" class="list-group-item level1" routerLink="viewclient"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Client</span></a></li>
+				</ul>
+	  		</li>
+			<!--Clients / Suppliers-->	
+	  		<li>
+				<a href="#contact-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">contact_phone</i></span> <span class="MenuTxtWord">Contacts</span> </a>
+				<ul class="Submenu collapse list-unstyled" id="contact-list">
+				  <li><a href="#" class="list-group-item level1" routerLink="addcontact"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Contact</span></a></li>
+				  <li><a href="#" class="list-group-item level1" routerLink="viewcontact"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Contact</span></a></li>
+				</ul>
+	  		</li>
+			<!--Clients / Suppliers-->
+	  		<li>
+				<a href="#admin" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">face</i></span> <span class="MenuTxt">Admin</span> </a>
+				<ul class="Submenu collapse list-unstyled" id="admin">
+				  <li><a href="#" class="list-group-item level1" routerLink="addmodel"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Model</span></a></li>
+				  <li><a href="#" class="list-group-item level1" routerLink="addpartnumber"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">Add Part Number</span></a></li>
+				  <li><a href="#" class="list-group-item level1" routerLink="addprice"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">Add Price</span></a></li>	
+				</ul>
+	  		</li>
+			<!--Clients / Suppliers-->	
+			
+			
+			
+			
+			
+		</ul>
+    </div>
+
+  </nav>
+  
+  <!-- Page Content Holder -->
+  <div id="content" style="width: 100%">
+   <div class="container-fluid">
+   	<div class="col-md-12" style="background:#fff">
+		<div style="background: #fff; padding:15px;">
+			<div class="">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="box">
+							<div class="box-header">
+								<h2>Employee Detail Form</h2>
+							</div>
+							<div class="box-body">
+								<form [formGroup]="addEmployeeForm" novalidate role="form">
+									<div class="nav-tab-container marginTop10">
+										<ul class="nav nav-tabs" name="item-selector-tabs">
+											<li class="active">
+												<a data-toggle="tab" href="#personal_details">Personal Details</a>
+											</li>
+											<li>
+												<a data-toggle="tab" href="#address_details">Contact Details</a>
+											</li>
+											<li>
+												<a data-toggle="tab" href="#emrgncy_cntct_details">Family Details</a>
+											</li>
+											<li>
+												<a data-toggle="tab" href="#documet_details">Document Details</a>
+											</li>
+										</ul>
+										<div class="tab-content">
+											<div id="personal_details" class="tab-pane fade in active">
+												<div class="form-group row employee-detail">
+													<div class="col-sm-9 col-xs-12">
+														<div class="form-group row">
+															<div class="col-sm-3">
+																<label>Title</label>
+																<select class="form-control c-select" formControlName="empTitle">
+																	<option *ngFor="let str of lstTitle">{{str.attrValue}}</option>
+																</select>
+															</div>
+
+															<div class="col-sm-3">
+																<label>Name</label>
+																<input type="text" class="form-control" formControlName="empName" placeholder="Name">
+															</div>
+															<div class="col-sm-3">
+																<label>Middle Name</label>
+																<input type="text" class="form-control" formControlName="empMName" placeholder="Middle Name">
+															</div>
+															<div class="col-sm-3">
+																<label>Surname</label>
+																<input type="text" class="form-control" formControlName="empSurname" placeholder="Surname">
+															</div>
+														</div>
+														<div class="form-group row">
+															<div class="col-sm-3 col-xs-12">
+																<label>Date of birth</label>
+																<input type="date" class="form-control" formControlName="empDOB" placeholder="">
+															</div>
+															<div class="col-sm-3 col-xs-6">
+																<label>Gender</label>
+																<select class="form-control c-select" formControlName="empGender">
+																	<option *ngFor="let str of lstGender">{{str.attrValue}}</option>
+																</select>
+															</div>
+															<div class="col-sm-3 col-xs-6">
+																<label>Blood Group</label>
+																<select class="form-control c-select" formControlName="empBloodG">
+																	<option *ngFor="let str of lstBloodGroup">{{str.attrValue}}</option>
+																</select>
+															</div>
+														</div>
+														<div class="form-group row">
+															<div class="col-sm-3">
+																<label>Marital Status</label>
+																<select class="form-control c-select" (change)="changeMaritalStatus(addEmployeeForm,$event)" formControlName="empMaritalStatus">
+																	<option *ngFor="let str of lstMaritalStatus">{{str.attrValue}}</option>
+																</select>
+															</div>
+															<div class="col-sm-3">
+																<label style="display:block;">Phone number</label>
+																<input type="number" class="form-control country-code" placeholder="Code" formControlName="empCCode">
+																<input type="number" class="form-control" style="width:calc(75% - 4px);display:inline-block;" placeholder="Phone Number"
+																	formControlName="empPhone">
+															</div>
+															<div class="col-sm-3">
+																<label>Email Address</label>
+																<input type="email" [required]="false" class="form-control" placeholder="Email Address" formControlName="empEmail1">
+															</div>
+															<div class="col-sm-3">
+																<label>Alternate Email Address</label>
+																<input type="email" [required]="false" class="form-control" placeholder="Email Address" formControlName="empEmail2">
+															</div>
+														</div>
+														<div class="form-group row">
+															<div class="col-sm-3">
+																<label>Facebook Link</label>
+																<input type="text" class="form-control" placeholder="Facebook Link" formControlName="empFB">
+															</div>
+															<div class="col-sm-3">
+																<label>LinkedIn Link</label>
+																<input type="text" class="form-control" placeholder="LinkedIn Link" formControlName="empLinkedin">
+															</div>
+															<div class="col-sm-3">
+																<label>Twitter Link</label>
+																<input type="text" class="form-control" placeholder="Twitter Link" formControlName="empTwitter">
+															</div>
+														</div>
+													</div>
+													<div class="col-sm-3 col-xs-12" style="min-height:250px;">
+														<div class="file-upload">
+															<label for="upload" id="uploaded-image" class="file-upload__label"></label>
+															<input id="upload" class="file-upload__input" accept="image/*" type="file" (change)="uploadImage($event)" name="file-upload"
+																formControlName="empPicUpload">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div id="address_details" class="tab-pane fade in">
+												<div class="form-group row">
+													<div class="col-sm-3">
+														<label>Country</label>
+														<select class="form-control c-select" #cntry formControlName="empCountry" (change)="onCountryChange(cntry.value)">
+															<option *ngFor="let str of lstCountry" [value]=str.countryId [ngValue]=str.countryId>{{str.countryName}}</option>
+														</select>
+													</div>
+													<div class="col-sm-3">
+														<label style="display:block;">Mobile number</label>
+														<input type="number" class="form-control country-code" placeholder="Code" readonly formControlName="empMCode">
+														<input type="number" class="form-control" style="width:calc(75% - 4px);display:inline-block;" placeholder="Mobile Number"
+															formControlName="empMobile">
+													</div>
+													<div class="col-sm-3">
+														<label style="display:block;">Alternate Mobile number</label>
+														<input type="number" class="form-control country-code" placeholder="Code" readonly formControlName="empAMCode">
+														<!-- <select class="form-control c-select" style="width:25%;display:inline-block;" formControlName="empAMCode">
+																			<option *ngFor="let str of lstCountryCode">{{str}}</option>
+																		</select> -->
+														<input type="number" class="form-control" style="width:calc(75% - 4px);display:inline-block;" placeholder="Mobile Number"
+															formControlName="empAMobile">
+													</div>
+												</div>
+												<fieldset>
+													<legend>Current Address :</legend>
+													<div class="form-group row">
+														<div class="col-sm-6">
+															<label>Address</label>
+															<textarea class="form-control text-area" placeholder="Address" formControlName="empAdd1" row="5"></textarea>
+														</div>
+														<div class="col-sm-6">
+<div class="form-group row"><label>State</label>
+															<select class="form-control c-select" #state1 formControlName="empState" (change)="onStateChange(state1.value)">
+																<option *ngFor="let str of lstState" [value]=str.stateId>{{str.stateName}}</option>
+															</select>
+
+													</div>
+<div class="form-group row"><label>City</label>
+															<select class="form-control c-select" formControlName="empCity">
+																<option *ngFor="let str of lstCity" [value]=str>{{str}}</option>
+															</select>
+														
+													</div>
+
+<div class="form-group row"><label>Pincode</label><input type="text" class="form-control" placeholder="Pincode" formControlName="empPincode">
+														
+													</div>
+													</div></div>
+
+												</fieldset>
+												<fieldset>
+													<legend>Permenant Address :</legend>
+													<div class="form-group row">
+														<div class="col-sm-12">
+															<input type="checkbox" style="vertical-align:top;" (change)="OnCopyAddress($event)" value="" /> Same As Above
+														</div>
+													</div>
+													<div class="form-group row">
+														<div class="col-sm-9">
+															<label>Address</label>
+															<textarea class="form-control text-area" placeholder="Address" formControlName="empAdd2"></textarea>
+														</div>
+													</div>
+													<div class="form-group row">
+														<div class="col-sm-3">
+															<label>Country</label>
+															<select class="form-control c-select" #c formControlName="empCountry2" (change)="onCountryChange2(c.value)">
+																<option *ngFor="let str of lstCountry2" [value]=str.countryId [ngValue]=str.countryId>{{str.countryName}}</option>
+															</select>
+														</div>
+														<div class="col-sm-3">
+															<label>State</label>
+															<select class="form-control c-select" #s formControlName="empState2" (change)="onStateChange2(s.value)">
+																<option *ngFor="let str of lstState2" [value]=str.stateId>{{str.stateName}}</option>
+															</select>
+															<!-- <input type="text" class="form-control" placeholder="State" formControlName="empState2"> -->
+														</div>
+														<div class="col-sm-3">
+															<label>City</label>
+															<!-- <input type="text" class="form-control" placeholder="City" formControlName="empCity2"> -->
+															<select class="form-control c-select" formControlName="empCity2">
+																<option *ngFor="let str of lstCity2" [value]=str>{{str}}</option>
+															</select>
+														</div>
+
+														<div class="col-sm-3">
+															<label>Pincode</label>
+															<input type="text" class="form-control" placeholder="Pincode" formControlName="empPincode2">
+														</div>
+													</div>
+												</fieldset>
+											</div>
+											<div id="emrgncy_cntct_details" class="tab-pane fade in">
+												<div class="form-group row">
+													<div class="col-sm-3">
+														<label>Date Of Anniversary</label>
+														<input type="date" class="form-control" placeholder="" formControlName="empDOAnni">
+													</div>
+
+													<div class="col-sm-offset-6 col-sm-3">
+														<button class="add-employee-relation" (click)="onAddRelation($event)">
+															<i class="material-icons">add</i>
+														</button>
+														<button class="remove-employee-relation" (click)="onRemoveRelation($event)">
+															<i class="material-icons">remove</i>
+														</button>
+													</div>
+												</div>
+												<div class="family-details-group">
+												<!---<div class="family-details-header">
+														<div class="form-group row">
+															<div class="col-sm-3">
+																<label>Name</label>
+															</div>
+															<div class="col-sm-3">
+																<label>Relation</label>
+															</div>
+															<div class="col-sm-3">
+																<label>Mobile number</label>
+															</div>
+															<div class="col-sm-3">
+																<label>Email Address</label>
+															</div>
+														</div>
+													</div>-->
+													<div id="family-details-body" class="family-details-body">
+														<div class="form-group row" *ngFor="let member of cntMember; let i = index;" [attr.data-index]="i">
+															<div class="col-sm-3"><label>Name</label>
+																<input type="text" class="form-control" [attr.formControlName]="'empFC' + member + 'Name'" placeholder="Contact Person Name">
+															</div>
+															<div class="col-sm-3"><label>Relation</label>
+																<select class="form-control c-select" [attr.formControlName]="'empFC' + member + 'Relation'">
+																	<option *ngFor="let str of lstRelationShip">{{str.attrValue}}</option>
+																</select>
+															</div>
+															<div class="col-sm-3"><label>Mobile number</label>
+																<input type="number" class="form-control" style="width:25%;display:inline-block;" placeholder="Code">
+																<input type="number" class="form-control" style="width:calc(75% - 4px);display:inline-block;" [attr.formControlName]="'empFC' + member + 'Phone'"
+																	placeholder="Mobile Number">
+															</div>
+															<div class="col-sm-3"><label>Email Address</label>
+																<input type="text" class="form-control" [attr.formControlName]="'empFC' + member + 'Email'" placeholder="Email Address">
+															</div>
+														</div>
+														<div class="form-group row">
+															<div class="col-sm-12">
+																<fieldset>
+																	<legend>
+																		References
+																	</legend>
+																	<div class="form-group row">
+																		<div class="col-sm-3">
+																			<label>Name</label>
+																			<input type="text" class="form-control" placeholder="Reference Name" formControlName="empRef1Name">
+																		</div>
+																		<div class="col-sm-3">
+																			<label>Company</label>
+																			<input type="text" class="form-control" placeholder="Reference Company" formControlName="empRef1Company">
+																		</div>
+																		<div class="col-sm-3">
+																			<label>Phone</label>
+																			<input type="text" class="form-control" placeholder="Reference Phone" formControlName="empRef1Phone">
+																		</div>
+																	</div>
+																	<div class="form-group row">
+																		<div class="col-sm-3">
+																			<label>Name</label>
+																			<input type="text" class="form-control" placeholder="Reference Name" formControlName="empRef2Name">
+																		</div>
+																		<div class="col-sm-3">
+																			<label>Company</label>
+																			<input type="text" class="form-control" placeholder="Reference Company" formControlName="empRef2Company">
+																		</div>
+																		<div class="col-sm-3">
+																			<label>Phone</label>
+																			<input type="text" class="form-control" placeholder="Reference Phone" formControlName="empRef2Phone">
+																		</div>
+																	</div>
+																</fieldset>
+															</div>
+														</div>
+													</div>
+
+												</div>
+											</div>
+											<div id="documet_details" class="tab-pane fade in">
+												<div class="form-group row">
+													<div class="col-sm-3">
+														<label>Date of Joining</label>
+														<input type="date" class="form-control" placeholder="Date of Joining" formControlName="empDOJ">
+													</div>
+													<div class="col-sm-3">
+														<label>Date of relieveing</label>
+														<input type="date" class="form-control" placeholder="Date of Relieveing" formControlName="empDOR">
+													</div>
+												</div>
+												<div class="form-group row">
+													<div class="col-sm-3">
+														<label>Pan card number</label>
+														<input type="text" class="form-control" placeholder="Pan Card Number" formControlName="empPAN">
+													</div>
+													<div class="col-sm-3">
+														<label>Aadhar card number</label>
+														<input type="text" class="form-control" placeholder="Aadhar Card Number" formControlName="empAdhar">
+													</div>
+												</div>
+												<!-- <div class="form-group row">
+													<div class="col-sm-3">
+														<h5>Passport Details</h5>
+													</div>
+												</div> -->
+												<div class="form-group row">
+													<div class="col-sm-3">
+														<label>Passport number</label>
+														<input type="text" class="form-control" placeholder="Passport Number" formControlName="empPassNo">
+													</div>
+													<div class="col-sm-3">
+														<label>Expiry Date</label>
+														<input type="date" class="form-control" placeholder="Expiry Date" formControlName="empPassExpiry">
+													</div>
+												</div>
+												<!-- <div class="form-group row">
+													<div class="col-sm-3">
+														<h5>Bank Details</h5>
+													</div>
+												</div> -->
+												<div class="form-group row">
+													<div class="col-sm-3">
+														<label>Bank Name</label>
+														<input type="text" class="form-control" placeholder="Bank Name" formControlName="empBankName">
+													</div>
+													<div class="col-sm-3">
+														<label>Bank A/C number</label>
+														<input type="number" class="form-control" placeholder="Bank A/C Number" formControlName="empBankAcc">
+													</div>
+													<div class="col-sm-3">
+														<label>Bank IFSC code</label>
+														<input type="text" class="form-control" placeholder="Bank IFSC Code" formControlName="empIFSCCode">
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+
+								<button type="submit" id="next-save-button" class="btn btn-success" (click)="onSave($event, addEmployeeForm)">Next</button>
+								<input type="button" value="Clear" class="btn btn-danger" (click)="onCancel($event)" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    	
+    </div>
+   </div>
+  </div>
+</div>
+
+<!-- jQuery CDN --> 
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
+<!-- Bootstrap Js CDN --> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+<script type="text/javascript">
+$(document).ready(function () {
+	$('#sidebarCollapse').on('click', function () {
+		$('#sidebar').toggleClass('active');
+	});
+}); 
+	
+$('.list-group a.list-group-item').on('click', function (e) {
+	$('.list-group a.list-group-item').removeClass('active');
+	$(this).addClass('active');
+});
+</script>
+</body>
+</html>
