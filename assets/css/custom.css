@@ -255,9 +255,52 @@ input.country-code {padding: 6px 4px;}
 
 input.form-control[type=file] {padding: 4px 10px;}
 input.form-control.phone-number{width:calc(75% - 4px);display:inline-block;}
-
-
-
+.custom-search-input{border: solid 1px #6666;border-radius: 4px;}
+.custom-search-input button.btn.btn-info.btn-sm { margin-right: -1px;}
+.custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+.input-tables th {
+    font-weight: normal;
+}
+.input-tables {
+    vertical-align: middle;
+    border: 1px solid #6666;
+}
+tr.input-tr td {
+    vertical-align: middle;
+    height: 100%;}
+    .tenure-block input.form-control {
+        width: 30%;
+        display: inline-block;
+        margin: 0 1%;
+    }
+    .disp-inline {
+        display: inline-table;
+    }.pr-10 {
+        padding-right: 10px;
+    }
+    .box-header .row {
+        margin-right: -15px;
+        margin-left: -15px
+    }
+ 
+    .halfwidth{width:45%;float:left;}
+    .disp-inline input.form-control {
+        height: 30px;
+    }
+    .table.input-tables>thead>tr>th {
+        text-align: center;
+        vertical-align: middle;
+        padding: 0;
+       
+    }
+    label.ui-check {
+        display: inline;
+        float: left;
+        clear: unset;
+    }
 /* ---------------------------------------------------
     MEDIAQUERIES
 ----------------------------------------------------- */

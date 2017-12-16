@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Thakrar infotrends</title>
+<!-- Bootstrap CSS CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!-- Our Custom CSS -->
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/material-design-icons/material-design-icons.css">
+<link rel="stylesheet" href="assets/css/custom.css"> </head>
+
+<body>
+<header>
+<div class="navbar">
+
+<button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn pull-left"> <i class="glyphicon glyphicon-menu-hamburger "></i> </button>
+<div class="navbar-item pull-left h5" id="pageTitle">Company Name</div>
+<!-- navbar right -->
+<ul class="nav navbar-nav pull-right">
+<!-- Email Drop down -->
+<li class="nav-item dropdown pos-stc-xs">
+<!-- Label -->
+<a class="nav-link" href="" data-toggle="dropdown"> <i class="material-icons">email</i> <span class="label label-sm up warn">3</span> </a>
+<!-- dropdown -->
+<div class="notification-dropdown dropdown-menu pull-right dropdown-menu-scale"> You have 4 new Email
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span class="avatar w-32">
+<img src="../assets/images/a0.jpg" alt="...">
+<i class="on b-white bottom"></i>
+</span> <span class="email-container">
+<span class="email-subject">Subject title</span> <span class="email-body">Body description..abc xyz jkl</span> </span>
+</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span class="avatar w-32">
+<img src="../assets/images/a0.jpg" alt="...">
+<i class="on b-white bottom"></i>
+</span> <span class="email-container">
+<span class="email-subject">Subject title</span> <span class="email-body">Body description..abc xyz jkl</span> </span>
+</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span class="avatar w-32">
+<img src="../assets/images/a0.jpg" alt="...">
+<i class="on b-white bottom"></i>
+</span> <span class="email-container">
+<span class="email-subject">Subject title</span> <span class="email-body">Body description..abc xyz jkl</span> </span>
+</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span class="avatar w-32">
+<img src="../assets/images/a0.jpg" alt="...">
+<i class="on b-white bottom"></i>
+</span> <span class="email-container">
+<span class="email-subject">Subject title</span> <span class="email-body">Body description..abc xyz jkl</span> </span>
+</a>
+</div>
+<!-- / dropdown -->
+</li>
+<!-- Notification Drop down -->
+<li class="nav-item dropdown pos-stc-xs">
+<!-- Label -->
+<a class="nav-link" href="" data-toggle="dropdown"> <i class="material-icons"></i> <span class="label label-sm up warn">3</span> </a>
+<!-- dropdown -->
+<div class="notification-dropdown dropdown-menu pull-right dropdown-menu-scale"> You have 4 notification.
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span calss="notification-item">Your notification 1</span> </a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span calss="notification-item">Your notification 2</span> </a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span calss="notification-item">Your notification 3</span> </a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item"> <span calss="notification-item">Your notification 4</span> </a>
+</div>
+<!--/ dropdown -->
+</li>
+<!-- User profile Drop down -->
+<li class="nav-item dropdown">
+<a class="nav-link clear" href="" data-toggle="dropdown"> <span class="avatar w-32">
+<img src="assets/images/a0.jpg" alt="...">
+<i class="on b-white bottom"></i>
+</span> </a>
+<div class="dropdown-menu pull-right dropdown-menu-scale">
+<a class="dropdown-item"> <span>Inbox</span> <span class="label warn m-l-xs">3</span> </a>
+<a class="dropdown-item"> <span>Profile</span> </a>
+<a class="dropdown-item"> <span>Settings</span> <span class="label primary m-l-xs">3/9</span> </a>
+<div class="dropdown-divider"></div> <a class="dropdown-item">
+Sign out
+</a> </div>
+</li>
+<li class="nav-item hidden-md-up">
+<a class="nav-link" data-toggle="collapse" data-target="#collapse"> <i class="material-icons"></i> </a>
+</li>
+</ul>
+</div>
+</header>
+<div class="wrapper">
+<!---sidebar starts-->
+<nav id="sidebar">	
+    <div id="solso-sidebar" class="list-group">
+    <ul class="list-unstyled components">
+    <li class="active">
+    <a href="dashboard.html" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">home</i></span> <span class="MenuTxtWord">Dashboard</span> </a>
+    </li>
+    <!--home-->
+    <li>
+    <a href="#enquiry-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">local_phone</i></span> <span class="MenuTxtWord">Enquiry</span> </a>
+    <ul class="Submenu collapse list-unstyled" id="enquiry-list">
+    <li><a href="add-enquiry.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">group</i></span> <span class="MenuTxt">Enquiry</span></a> </li>
+    <li><a href="quote.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">receipt</i></span> <span class="MenuTxt">Quote</span></a> </li>
+    </ul>
+    </li>
+    <!--Enquiry-->
+    <li>
+    <a href="#inventory" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxtWord">Inventory</span> </a>
+    <ul class="Submenu collapse list-unstyled" id="inventory">
+    <li><a href="add-inventory.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">group</i></span> <span class="MenuTxt">Add Inventory</span></a> </li>
+    <li><a href="view-inventory.html" class="list-group-item level1"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Inventory</span></a> </li>
+    </ul>
+    </li>
+    <!--Inventory-->
+    <li>
+    <a href="#autorenew" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">autorenew</i></span> <span class="MenuTxtWord">Renewals</span> </a>
+    </li>
+    <!--Renewals-->
+    <li>
+    <a href="#employe-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">face</i></span> <span class="MenuTxtWord">Employees</span> </a>
+    <ul class="Submenu collapse list-unstyled" id="employe-list">
+    <li><a href="add-employee.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Employees</span></a> </li>
+    <li><a href="view-employee.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Employees</span></a> </li>
+    </ul>
+    </li>
+    <!--Employees-->
+    <li>
+    <a href="#client-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">account_box</i></span> <span class="MenuTxtWord">Business Partner</span> </a>
+    <ul class="Submenu collapse list-unstyled" id="client-list">
+    <li><a href="add-business-partner.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Client</span></a> </li>
+    <li><a href="veiw-business-partner.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Client</span></a> </li>
+    </ul>
+    </li>
+    <!--Clients / Suppliers-->
+    <li>
+    <a href="#contact-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">contact_phone</i></span> <span class="MenuTxtWord">Address Book</span> </a>
+    <ul class="Submenu collapse list-unstyled" id="contact-list">
+    <li><a href="add-contacts.html" class="list-group-item level1"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Contact</span></a> </li>
+    <li><a href="view-contacts.html" class="list-group-item level1"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Contact</span></a> </li>
+    </ul>
+    </li>
+    <!--Clients / Suppliers-->
+    <li>
+    <a href="#admin" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">face</i></span> <span class="MenuTxtWord">Admin</span> </a>
+    <ul class="Submenu collapse list-unstyled" id="admin">
+    <li><a href="add-model.html" class="list-group-item level1"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Model</span></a> </li>
+    <li><a href="add-part-number.html" class="list-group-item level1"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">Add Part Number</span></a> </li>
+    <li><a href="add-price.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">Add Price</span></a> </li>
+    </ul>
+    </li>
+    <!--Clients / Suppliers-->
+    </ul>
+    </div>
+    </nav><!---sidebar ends-->
+
+<div id="content" style="width: 100%">
+<div class="container-fluid">
+<div class="col-md-12" style="background:#fff">
+<div style="background: #fff; padding:15px;">
+<div class="">
+<div class="row">
+<div class="col-md-12">
+<div class="box">
+        <div class="box-header"><div class="row "><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 "><div class="col-lg-3 col-md-3 col-sm-3 col-xs-12"><div class="disp-inline halfwidth "><label>Enquiry No.</label></div><div class="disp-inline col-sm-6 no-padding"><input class="form-control" placeholder="" type="text"> </div></div> </div></div></div></div>
+    </div>
+<div class="box-body"><form>
+                    <div class="enquiry-form form-group row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
+                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <label>Enquiry Number</label>
+                                <input class="form-control" placeholder="" type="text">
+                            </div>
+                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <label>Business Type</label>
+                                    <select class="form-control c-select">
+                                            <option>old</option>
+                                            <option>new</option>
+                                        </select>
+                                </div>
+                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <label>Enquiry Type</label>
+                                <select class="form-control c-select">
+                                    <option>Sales</option>
+                                    <option>Rental</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <label>Source</label>
+                                    <select class="form-control c-select">
+                                        <option>Source1</option>
+                                        <option>Source2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                        <label>Date</label>
+                                        <input class="form-control" placeholder="" type="date">
+                                    </div>
+                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <label>Company Name</label>
+                                <input class="form-control" placeholder="Company Name" type="text">
+                            </div>
+                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <label>Contact Person Name</label>
+                                <input class="form-control" placeholder="Person Name" type="text">
+                            </div>
+                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <label>Sales Representative</label>
+                                <select class="form-control c-select">
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <label>Stage</label>
+                                <!--<select class="form-control c-select">
+                                        <option></option>
+                                        <option></option>
+                                        <option></option>
+                                    </select>-->
+                                    <div class="custom-search-input">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control input-sm" placeholder="Search" />
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-info btn-sm" type="button">
+                                                        <i class="glyphicon glyphicon-search"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div></div>
+                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <label>Stage Reason</label>
+                                   <!-- <select class="form-control c-select">
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>-->
+                                        <input type="text" class="form-control " placeholder="Search..">
+                                </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  row">
+                            <button class="add-enquiry">
+                                <i class="material-icons">add</i>
+                            </button>
+                            <button class="remove-enquiry">
+                                <i class="material-icons">remove</i>
+                            </button>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                            <div class="seperator"></div>
+                        </div>
+                       <div class="enquiry-items col-lg-12 col-md-12 col-sm-12 col-xs-12 ">
+                         
+                            <div class="row">
+                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+                           
+                            
+                            <div class="table-responsive"> <table class="table table-condensed input-tables table-striped"> 
+                                    <thead> <tr> <th>#</th> 
+                                       
+                                        <th>Part No.</th>
+                                        <th>Product</th>
+                                        <th class="col-lg-1 col-md-1 col-sm-1">Quantity</th>
+                                        <th>Client Description</th>
+                                        <th>TI Description</th>
+                                        <th>Remark</th>
+                                        </tr> </thead> <tbody>
+                                        
+                                        <tr class="input-tr" data-index="0">
+                                        <td valign="middle">1</td> 
+                                       <td><input type="text" class="form-control"></td> 
+                                        <td><input type="text" class="form-control"></td>
+                                        <td><input type="text" class="form-control"></td> 
+                                        <td><textarea class="form-control"></textarea></td>
+                                        <td><textarea class="form-control"></textarea></td> 
+                                        <td><textarea class="form-control"></textarea></td>
+                                        </tr>
+                                        
+                                        </tbody></table> </div></div>
+                            </div>
+                            <div class="seperator"></div>
+                        </div>
+                    </div>
+                    <button class="btn btn-success" type="submit">Save</button>
+                    <button class="btn btn-success" type="submit">Convert Quote</button>
+                    <input class="btn btn-danger" type="button" value="Clear"></form>
+                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap Js CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+$('#sidebarCollapse').on('click', function() {
+$('#sidebar').toggleClass('active');
+});
+});
+$('.list-group a.list-group-item').on('click', function(e) {
+$('.list-group a.list-group-item').removeClass('active');
+$(this).addClass('active');
+});
+</script>
+</body>
+
+</html>

@@ -97,70 +97,69 @@ Sign out
 </header>
 <div class="wrapper">
 <!---sidebar starts-->
-<nav id="sidebar">
-
-<div id="solso-sidebar" class="list-group">
-<ul class="list-unstyled components">
-<li class="active">
-<a href="#dashboard" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar" routerLink="dashboard"> <span class="MenuIcon"><i class="fa material-icons">home</i></span> <span class="MenuTxtWord">Dashboard</span> </a>
-</li>
-<!--home-->
-<li>
-<a href="#enquiry-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">local_phone</i></span> <span class="MenuTxtWord">Enquiry</span> </a>
-<ul class="Submenu collapse list-unstyled" id="enquiry-list">
-<li><a href="#" class="list-group-item level1" routerLink="enquiry"><span class="MenuIcon"><i class="fa material-icons">group</i></span> <span class="MenuTxt">Enquiry</span></a> </li>
-<li><a href="#" class="list-group-item level1" routerLink="quote"><span class="MenuIcon"><i class="fa material-icons">receipt</i></span> <span class="MenuTxt">Quote</span></a> </li>
-</ul>
-</li>
-<!--Enquiry-->
-<li>
-<a href="#inventory" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxtWord">Inventory</span> </a>
-<ul class="Submenu collapse list-unstyled" id="inventory">
-<li><a href="#" class="list-group-item level1" routerLink="addinventory"><span class="MenuIcon"><i class="fa material-icons">group</i></span> <span class="MenuTxt">Add Inventory</span></a> </li>
-<li><a href="#" class="list-group-item level1" routerLink="viewinventory"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Inventory</span></a> </li>
-</ul>
-</li>
-<!--Inventory-->
-<li>
-<a href="#autorenew" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">autorenew</i></span> <span class="MenuTxtWord">Renewals</span> </a>
-</li>
-<!--Renewals-->
-<li>
-<a href="#employe-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">face</i></span> <span class="MenuTxtWord">Employees</span> </a>
-<ul class="Submenu collapse list-unstyled" id="employe-list">
-<li><a href="#" class="list-group-item level1" routerLink="addemployee"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Employees</span></a> </li>
-<li><a href="#" class="list-group-item level1" routerLink="viewemployee"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Employees</span></a> </li>
-</ul>
-</li>
-<!--Employees-->
-<li>
-<a href="#client-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">account_box</i></span> <span class="MenuTxtWord">Clients / Suppliers</span> </a>
-<ul class="Submenu collapse list-unstyled" id="client-list">
-<li><a href="#" class="list-group-item level1" routerLink="addclient"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Client</span></a> </li>
-<li><a href="#" class="list-group-item level1" routerLink="viewclient"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Client</span></a> </li>
-</ul>
-</li>
-<!--Clients / Suppliers-->
-<li>
-<a href="#contact-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">contact_phone</i></span> <span class="MenuTxtWord">Contacts</span> </a>
-<ul class="Submenu collapse list-unstyled" id="contact-list">
-<li><a href="#" class="list-group-item level1" routerLink="addcontact"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Contact</span></a> </li>
-<li><a href="#" class="list-group-item level1" routerLink="viewcontact"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Contact</span></a> </li>
-</ul>
-</li>
-<!--Clients / Suppliers-->
-<li>
-<a href="#admin" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">face</i></span> <span class="MenuTxtWord">Admin</span> </a>
-<ul class="Submenu collapse list-unstyled" id="admin">
-<li><a href="#" class="list-group-item level1" routerLink="addmodel"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Model</span></a> </li>
-<li><a href="#" class="list-group-item level1" routerLink="addpartnumber"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">Add Part Number</span></a> </li>
-<li><a href="#" class="list-group-item level1" routerLink="addprice"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">Add Price</span></a> </li>
-</ul>
-</li>
-<!--Clients / Suppliers-->
-</ul>
-</div>
-</nav><!---sidebar ends-->
+<nav id="sidebar">	
+	<div id="solso-sidebar" class="list-group">
+	<ul class="list-unstyled components">
+	<li class="active">
+	<a href="dashboard.html" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">home</i></span> <span class="MenuTxtWord">Dashboard</span> </a>
+	</li>
+	<!--home-->
+	<li>
+	<a href="#enquiry-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">local_phone</i></span> <span class="MenuTxtWord">Enquiry</span> </a>
+	<ul class="Submenu collapse list-unstyled" id="enquiry-list">
+	<li><a href="add-enquiry.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">group</i></span> <span class="MenuTxt">Enquiry</span></a> </li>
+	<li><a href="quote.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">receipt</i></span> <span class="MenuTxt">Quote</span></a> </li>
+	</ul>
+	</li>
+	<!--Enquiry-->
+	<li>
+	<a href="#inventory" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxtWord">Inventory</span> </a>
+	<ul class="Submenu collapse list-unstyled" id="inventory">
+	<li><a href="add-inventory.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">group</i></span> <span class="MenuTxt">Add Inventory</span></a> </li>
+	<li><a href="view-inventory.html" class="list-group-item level1"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Inventory</span></a> </li>
+	</ul>
+	</li>
+	<!--Inventory-->
+	<li>
+	<a href="#autorenew" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">autorenew</i></span> <span class="MenuTxtWord">Renewals</span> </a>
+	</li>
+	<!--Renewals-->
+	<li>
+	<a href="#employe-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">face</i></span> <span class="MenuTxtWord">Employees</span> </a>
+	<ul class="Submenu collapse list-unstyled" id="employe-list">
+	<li><a href="add-employee.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Employees</span></a> </li>
+	<li><a href="view-employee.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Employees</span></a> </li>
+	</ul>
+	</li>
+	<!--Employees-->
+	<li>
+	<a href="#client-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">account_box</i></span> <span class="MenuTxtWord">Business Partner</span> </a>
+	<ul class="Submenu collapse list-unstyled" id="client-list">
+	<li><a href="add-business-partner.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Client</span></a> </li>
+	<li><a href="veiw-business-partner.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Client</span></a> </li>
+	</ul>
+	</li>
+	<!--Clients / Suppliers-->
+	<li>
+	<a href="#contact-list" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">contact_phone</i></span> <span class="MenuTxtWord">Address Book</span> </a>
+	<ul class="Submenu collapse list-unstyled" id="contact-list">
+	<li><a href="add-contacts.html" class="list-group-item level1"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Contact</span></a> </li>
+	<li><a href="view-contacts.html" class="list-group-item level1"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">View Contact</span></a> </li>
+	</ul>
+	</li>
+	<!--Clients / Suppliers-->
+	<li>
+	<a href="#admin" data-toggle="collapse" aria-expanded="false" data-parent="#solso-sidebar"> <span class="MenuIcon"><i class="fa material-icons">face</i></span> <span class="MenuTxtWord">Admin</span> </a>
+	<ul class="Submenu collapse list-unstyled" id="admin">
+	<li><a href="add-model.html" class="list-group-item level1"><span class="MenuIcon"><i class="fa material-icons">queue</i></span> <span class="MenuTxt">Add Model</span></a> </li>
+	<li><a href="add-part-number.html" class="list-group-item level1"><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">Add Part Number</span></a> </li>
+	<li><a href="add-price.html" class="list-group-item level1" ><span class="MenuIcon"><i class="fa material-icons">devices_other</i></span> <span class="MenuTxt">Add Price</span></a> </li>
+	</ul>
+	</li>
+	<!--Clients / Suppliers-->
+	</ul>
+	</div>
+	</nav><!---sidebar ends-->	
 
 <div id="content" style="width: 100%">
 <div class="container-fluid">
@@ -171,15 +170,14 @@ Sign out
 <div class="col-md-12">
 <div class="box">
 <div class="box-header">
-<h2>Business Partner Form</h2> </div>
+<h2>Add contacts Form</h2> </div>
 <div class="box-body">
-<form >
+<form>
 <div class="nav-tab-container marginTop10">
 <ul class="nav nav-tabs" name="item-selector-tabs">
-<li class="active"> <a data-toggle="tab" href="#personal_details">Personal Details</a> </li>
-<li> <a data-toggle="tab" href="#client_document_details">Document Details</a> </li>
-<li> <a data-toggle="tab" href="#bank_details">Bank Details</a> </li>
-<li> <a data-toggle="tab" href="#clients-contact_details">Contact Details</a> </li>
+<li class="active"> <a data-toggle="tab" href="#personal_details" aria-expanded="false">Personal Details</a> </li>
+<li class=""> <a data-toggle="tab" href="#address_details" aria-expanded="false">Contact Details</a> </li>
+
 </ul>
 
 <!--tabcontent starts-->
@@ -188,178 +186,125 @@ Sign out
 
 <!--personal_details starts-->	
 <div id="personal_details" class="tab-pane fade in active">
-
-<div class="form-group row client-detail">
-<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-<div class="form-group row">
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-<label>Company Name</label>
-<input type="text" class="form-control"  placeholder="Company Name"> </div></div>
-
-<div class="form-group row">
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-<label>Name - Director 1</label>
-<input type="text" class="form-control"  placeholder="Director Full Name"> </div></div>
-<div class="form-group row">
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-<label>Name - Director 2</label>
-<input type="text" class="form-control"  placeholder="Director Full Name"> </div></div>
-<div class="form-group row">
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-<label>Company Website</label>
-<input type="text" class="form-control"  placeholder="Company Website"> </div></div>
-
-<div class="form-group row">
-<div class="col-sm-3">
-<label>Department</label>
-<select  class="form-control" ><option></option></select> </div>
-<div class="col-sm-3">
-<label>Entity Type</label>
-<select  class="form-control" ><option></option></select> </div>
-<div class="col-sm-3">
-<label>Industry</label>
-<select  class="form-control" ><option></option></select> </div>
-
-</div>
-
-<div class="form-group row">
-<div class="col-sm-3">
-<label>Facebook Link</label>
-<input type="text" class="form-control" placeholder="Facebook Link"> </div>
-<div class="col-sm-3">
-<label>LinkedIn Link</label>
-<input type="text" class="form-control" placeholder="LinkedIn Link"> </div>
-<div class="col-sm-3">
-<label>Twitter Link</label>
-<input type="text" class="form-control" placeholder="Twitter Link" > </div>
-<div class="col-sm-3">
-<label>Skype Id</label>
-<input type="text" class="form-control" placeholder="Skype Id"> </div>
-</div>
-
-</div>
-
-</div>
-</div>
+        
+        <div class="form-group row employee-detail">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <label>Name</label>
+                        <select class="form-control c-select person-title" >
+                        <option></option>
+                        </select>
+                        <input type="text" class="form-control name-with-title " placeholder="Name"> </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <label>Middle Name</label>
+                        <input type="text" class="form-control" placeholder="Middle Name"> </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <label>Surname</label>
+                        <input type="text" class="form-control"  placeholder="Surname"> </div>
+                        </div>
+                        <div class="form-group row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                        <label>Contact Type</label>
+                                        <select class="form-control c-select">
+                                                <option></option>
+                                                </select></div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                        <label>Date of birth</label>
+                                        <input type="date" class="form-control"  placeholder="">
+                                        </div>	
+                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <label>Date Of Anniversary</label>
+                                <input type="date" class="form-control"  placeholder=""></div>
+                        
+                        
+                        </div>
+                        <div class="form-group row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <label>Company</label>
+                        <input type="text" class="form-control"  placeholder="Company Name">
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <label>Department</label>
+                                <input type="text" class="form-control" readonly  placeholder="Department">
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                        <label>Designation</label>
+                                        <input type="text" class="form-control"   placeholder="Designation">
+                                        </div>
+                        
+                                        
+                        </div>
+                        <div class="form-group row">
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <label>Facebook Link</label>
+                        <input type="text" class="form-control" placeholder="Facebook Link" > </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <label>LinkedIn Link</label>
+                        <input type="text" class="form-control" placeholder="LinkedIn Link" > </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <label>Twitter Link</label>
+                        <input type="text" class="form-control" placeholder="Twitter Link" > </div>
+                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                <label>Skype Id</label>
+                                <input type="text" class="form-control" placeholder="Skype Id" > </div>
+                        </div>
+                    </div>
+        </div>
+        </div>
 
 <!--personal_details ends-->	
-<!--client_document_details starts-->
-<div id="client_document_details" class="tab-pane fade in">
-
+<!--address_details starts-->
+<div id="address_details" class="tab-pane fade">
+ <div class="form-group row">
+            <div class="col-lg-3 col-md-3 col-sm- col-xs-12">
+                <label>Email Address</label>
+                <input class="form-control "  placeholder="Email Address" type="text">
+            </div>
+         <div class="col-lg-3 col-md-3 col-sm- col-xs-12">
+                <label>Alternate Email Address</label>
+                <input class="form-control " placeholder="Email Address" type="text" >
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm- col-xs-12">
+                        <label>Contact Owner</label>
+                        <select class="form-control">
+                          <option></option>
+                          <option></option>
+                        </select>
+                    </div>
+        </div>
 <div class="form-group row">
-<div class="col-sm-3">
-<label>Pan Number</label>
-<input type="text" class="form-control" placeholder="Pan Number">
-</div>
-<div class="col-sm-3">
-<label>GST Number</label>
-<input type="text" class="form-control" placeholder="GST Number">
-</div>
-<div class="col-sm-3">
-<label>CST Number</label>
-<input type="text" class="form-control" placeholder="CST Number">
-</div>
-<div class="col-sm-3">
-<label>VAT Tin</label>
-<input type="text" class="form-control" placeholder="VAT Tin">
-</div>
-</div>
-<div class="form-group row">
-
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-<label>Upload Documents:</label>
-<input class="form-control " placeholder="Upload document" type="file">
-</div>
-<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-<div class="form-group row">
-<label>Document Name</label>
-<input type="text" class="form-control client_document_details " placeholder="Documents Name" >
-</div>
-</div>
-</div>
-
-
-</div>
-<!--client_document_details ends-->
-<!--bank_details starts-->
-<div id="bank_details" class="tab-pane fade in ">
-<div class="form-group row">
-<div class="col-sm-12">
-<button class="add-bank-detail">
-<i class="material-icons">add</i>
-</button>
-<button class="remove-bank-detail">
-<i class="material-icons">remove</i>
-</button>
-</div>
-</div>
-<div class="form-group row" >
-<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-<label>Beneficiary Name</label>
-<input class="form-control " placeholder="Beneficiary Name" type="text">
-</div>
-<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-<label>Bank Name</label>
-<input class="form-control" placeholder="Bank Name" type="text">
-</div>
-<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-<label>Bank Branch</label>
-<input class="form-control" placeholder="Bank Branch" type="text" >
-</div>
-<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-<label>Bank A/C number</label>
-<input class="form-control"placeholder="Bank A/C Number" type="number">
-</div>
-<div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-<label>Bank IFSC code</label>
-<input class="form-control" placeholder="Bank IFSC Code" type="text" >
-</div>
-</div>
-</div>
-<!--bank_details ends-->
-<!--documet_details starts-->
-<div id="clients-contact_details" class="tab-pane fade in ">
-<div class="form-group row">
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-<label>Phone Number</label><input type="number" class="form-control country-code" placeholder="Code">
-<input type="number" class="form-control phone-number"  placeholder="Phone Number">
-</div>
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-<label>Mobile Number</label>
-<input class="form-control country-code"  placeholder="Code" readonly="">
-<input type="number" class="form-control phone-number" placeholder="Mobile Number" >
-</div>
-<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-<label>Alternate Mobile Number</label>
-<input class="form-control country-code"  placeholder="Code" readonly="">
-<input type="number" class="form-control phone-number" placeholder="Mobile Number" >
-</div>
-</div>
-<div class="form-group row">
-<div class="col-sm-3">
-<label>Email Address</label>
-<input type="text" class="form-control" placeholder="Email Address" >
-</div>
-<div class="col-sm-3">
-<label>Alternate Email Address</label>
-<input type="text" class="form-control" placeholder="Email Address">
-</div>
-</div>
+            <div class="col-sm-3">
+                <label >Phone number</label>
+                <input class="form-control country-code"  placeholder="Code" readonly=""  type="number" >
+                <input class="form-control phone-number"  placeholder="Phone Number"  type="number">
+            </div>
+            <div class="col-sm-3">
+                <label >Mobile number</label>
+                <input class="form-control country-code"   placeholder="Code" readonly=""  type="number" >
+                <input class="form-control phone-number"   placeholder="Mobile Number" type="number" >
+            </div>
+            <div class="col-sm-3">
+                <label >Alternate Mobile number</label>
+                <input class="form-control country-code"  placeholder="Code" readonly=""type="number" >
+                <input class="form-control phone-number"   placeholder="Mobile Number" type="number" >
+            </div>
+        </div>
 <fieldset>
 
 <div class="form-group row">
 <div class="col-md-9 no-padding-lr">
 <div class="col-sm-6">
-<label>Office Address :</label>
-<textarea class="form-control text-area2" placeholder="Address"  ></textarea>
+<label>Address :</label>
+<textarea class="form-control text-area2" placeholder="Address" formcontrolname="empAdd1" row="5"></textarea>
 </div>
 <div class="col-sm-6">
-	<div class="form-group row">
+<div class="form-group row">
 <label>Country</label>
 <select class="form-control c-select">
 <option></option>
 </select>
-</div>
+</div>	
 <div class="form-group row">
 <label>State</label>
 <select class="form-control c-select">
@@ -368,64 +313,28 @@ Sign out
 </div>
 <div class="form-group row">
 <label>City</label>
-<select class="form-control c-select">
+<select class="form-control c-select" formcontrolname="empCity">
 <option></option>
 </select>
 </div>
 <div class="form-group row">
 <label>Pincode</label>
-<input type="text" class="form-control" placeholder="Pincode" > </div>
-</div>
-</div>
-</div>
-</fieldset>
-<fieldset>
-
-<div class="form-group row">
-<div class="col-sm-12">
-<input type="checkbox" style="vertical-align:top;" value=""> Same As Above </div>
-</div>
-<div class="form-group row">
-<div class="col-md-9 no-padding-lr">
-<div class="col-sm-6">
-<label>WareHouse Address :</label>
-<textarea class="form-control text-area text-area2" placeholder="Address" ></textarea>
-</div>
-<div class="col-sm-6">
-<div class="form-group row">
-<label>Country</label>
-<select class="form-control c-select">
-<option></option>
-</select>
-</div>
-<div class="form-group row">
-<label>State</label>
-<select class="form-control c-select">
-<option></option>
-</select>
-</div>
-<div class="form-group row">
-<label>City</label>
-<select class="form-control c-select">
-<option></option>
-</select>
-</div>
-<div class="form-group row">
-<label>Pincode</label>
-<input type="text" class="form-control" placeholder="Pincode" formcontrolname="empPincode2"> </div>
+<input type="text" class="form-control" placeholder="Pincode" formcontrolname="empPincode"> </div>
 </div>
 </div>
 </div>
 </fieldset>
 
 </div>
-<!--documet_details starts-->
+<!--address_details endss-->
+
 
 </div>
 <!--tabcontent ends-->
-</form>
+
 <button type="submit" id="next-save-button" class="btn btn-success">Next</button>
-<input type="button" value="Clear" class="btn btn-danger"/> </div>
+<input type="button" value="Clear" class="btn btn-danger"> </div></form>
+
 </div>
 </div>
 </div>
